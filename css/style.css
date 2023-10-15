@@ -1,0 +1,45 @@
+/* header and nav */
+.header {
+    background-color: aqua;
+}
+/* 
+Colors for Project: 
+Emerald Green: Hex #466458
+Sage Green: HEX #91A78F
+Ballet Pink: HEX #FDEEE7
+Light Sage: HEX #B4C9BB
+Salamander: HEX #699886
+Fonts for Project: 
+Lato: 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+Hello Paris:
+@font-face {
+    font-family: "Hello Paris Script";
+    src: url("https://db.onlinewebfonts.com/t/bea2de6d24c35d0894f1bd50c2f994f3.eot");
+    src: url("https://db.onlinewebfonts.com/t/bea2de6d24c35d0894f1bd50c2f994f3.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/bea2de6d24c35d0894f1bd50c2f994f3.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/bea2de6d24c35d0894f1bd50c2f994f3.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/bea2de6d24c35d0894f1bd50c2f994f3.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/bea2de6d24c35d0894f1bd50c2f994f3.svg#Hello Paris Script")format("svg");
+}
+*/
+.logo {
+    background: ;
+    height: 100px;
+    background-image: url("");
+    background-repeat: no-repeat;
+}
+.MyWork {
+   
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
