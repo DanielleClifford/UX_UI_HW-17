@@ -24,7 +24,7 @@ body {
     background-color: #466458;
 }
     /* header and nav */
-.nav {
+nav {
         display: flex;
         display: inline-block;
         background-color: #91A78F;
@@ -46,36 +46,78 @@ ul {
     background-color: #91A78F;
     text-decoration: none;
     color: black;
-    font-family: Lato, Helvetica, sans-serif;
+    font-family: 'Young Serif', serif;
+    font-size: 2.5vb;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+    }
+    li a:hover {
+        text-decoration: underline #FDEEE7 5px;
     }
     .logo img {
         width: 10%;
         height: auto;
         background-color: #91A78F;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
     
 /* About Me */
 .aboutme1 {
-    display: flex;
+    display: grid;
+    min-height: 500px;
+    grid-template-rows: 300px 200px;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "aboutme1 aboutmeimage1"
+    "shortdesc aboutmeimage1";
 }
-.aboutme2 {
-    display: flex;
-}
-.aboutmeimage1 {
-    width: 30%;
-    height: auto;
-}
-.aboutmeimage2 {
+#shortdesc {
+    grid-area: shortdesc;
+    margin-left: 30%;}
+#aboutme1 {
+    grid-area: aboutme1;
+    margin-left: 30%;}
+#aboutmeimage1 {
+    grid-area: aboutmeimage1;
     width: 50%;
+    height: auto;}
+
+.aboutme2 { 
+    display: grid;
+    top: 20;
+    min-height: 500px;
+    grid-template-rows: 300px 200px;
+    grid-template-columns: 30% 60%;
+    grid-template-areas: 
+    "aboutmeimage2 aboutme2"
+    "aboutmeimage2 shortdesc2";
+}
+
+#aboutmeimage2 { 
+    grid-area: aboutmeimage2;
+    padding: 10px;
+    width: auto;
     height: auto;
 }
+#aboutme2 {
+    grid-area: aboutme2;
+}
+#shortdesc2 {
+    grid-area:shortdesc2;
+}
+
 div h1 {
         color: white;
-        font-family: Lato, Helvetica, sans-serif;
+        font-family: 'Young Serif', serif;
+        font-size: 7vb;
     }
 div h2 {
         color: white;
-        font-family: Lato, Helvetica, sans-serif;
+        font-family: 'Young Serif', serif;
+        font-size: 3vb;
        }
 div h3 {
         color: white;
@@ -88,12 +130,11 @@ div h4{
 div h5{
         color: white;
         font-family: Lato, Helvetica, sans-serif;
+        font-size: 1.8vb;
         }
 
 /* My Work */
-.MyWork {
-   
-    }
+
 img {
     width: 100%;
     height: auto;
@@ -103,9 +144,17 @@ img {
 
 
 /* Footer */
+footer {
+    background-color: #91A78F;
+    width: auto;
+    vertical-align: bottom;
+    padding: 20px;
+}
+
 footer h2 {
     color: white;
-    font-family: Lato, Helvetica, sans-serif;
+    font-family: 'Young Serif', serif;
+    font-size: 3vb;
    }
 footer p {
     color: white;
