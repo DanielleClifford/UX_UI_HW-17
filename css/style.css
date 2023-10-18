@@ -64,7 +64,7 @@ ul {
         left: 0;
     }
     
-/* About Me */
+/* About Me: Top Section (section 1)*/
 .aboutme1 {
     display: grid;
     min-height: 500px;
@@ -84,11 +84,12 @@ ul {
     grid-area: aboutmeimage1;
     width: 50%;
     height: auto;}
-
+/* About Me: Second Section (section 2)*/
 .aboutme2 { 
     display: grid;
     top: 20;
     min-height: 500px;
+    justify-content: center;
     grid-template-rows: 300px 200px;
     grid-template-columns: 30% 60%;
     grid-template-areas: 
@@ -96,7 +97,7 @@ ul {
     "aboutmeimage2 shortdesc2";
 }
 
-#aboutmeimage2 { 
+#aboutmeimage2 {
     grid-area: aboutmeimage2;
     padding: 10px;
     width: auto;
@@ -104,6 +105,7 @@ ul {
 }
 #aboutme2 {
     grid-area: aboutme2;
+    padding-top: 170px;
 }
 #shortdesc2 {
     grid-area:shortdesc2;
@@ -134,14 +136,55 @@ div h5{
         }
 
 /* My Work */
-
+#myworktitle {
+    padding-left: 20px;
+}
+#mywork1 {
+    display: flex;
+    align-items: baseline;
+    padding-left: 20px;
+}
+#mywork1 h4 {
+    padding-left: 50px;
+}
 img {
     width: 100%;
     height: auto;
+    padding: 0;
+}
+.more {
+    padding-left: 30px;
+    padding-right: 30px;
+    border: #FDEEE7;
+    border-width: 3px;
+    border-radius: 15px;
+    border-style: solid;
+    background-color: #91A78F;
+    width: fit-content;
+    height: fit-content;
+    transition: text-decoration 0.3s ease;
+}
+.more h2 {
+    color: black;
+}
+.more:hover {
+    text-decoration: underline #FDEEE7 5px;
 }
 
 /* Skills */
-
+.skills h1 {
+    text-align: center;
+}
+#skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: -20px;
+}
 
 /* Footer */
 footer {
